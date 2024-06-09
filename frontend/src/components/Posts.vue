@@ -29,7 +29,7 @@
                             color="red"
                         text-color="white"
                         >
-                        javascript is the best for learning ...
+                        javascript
                         </v-chip>
 
                     </div>
