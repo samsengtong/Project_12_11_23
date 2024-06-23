@@ -15,7 +15,8 @@ class PostController extends Controller
         return response()->json(['posts'=>$posts, 'message'=>'Hello post created']);
     }
     public function store(Request $request){
-        $rules = [
+
+    $rules = [
 
             'title'=> 'required',
             'sub_content'=>'required',
@@ -23,6 +24,8 @@ class PostController extends Controller
 
         ];
         $this->validate($request,$rules);
+
+        
         $data = $request->all();
         $post = Post::create($data);
         return response()->json(['post'=>$post]);
